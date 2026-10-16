@@ -104,7 +104,6 @@
     tick();
     setInterval(tick, 1000);
 
-    // Add lamp to cart: header ka cart count barhao
     document.getElementById('saleBtn').addEventListener('click', () => {
         const badge = document.querySelector('.cart-count');
         if (badge) badge.textContent = (parseInt(badge.textContent) || 0) + 1;

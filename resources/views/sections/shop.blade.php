@@ -160,7 +160,6 @@
     document.getElementById('shopSearch').addEventListener('input', e => { q = e.target.value.toLowerCase().trim(); render(); });
     document.getElementById('shopSort').addEventListener('change', e => { sort = e.target.value; render(); });
 
-    // Add to cart: header ka cart count barhao
     document.querySelectorAll('.add-btn').forEach(b => b.addEventListener('click', () => {
         const badge = document.querySelector('.cart-count');
         if (badge) badge.textContent = (parseInt(badge.textContent) || 0) + 1;

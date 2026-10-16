@@ -7,7 +7,7 @@
     @include('sections.features')
     @include('sections.categories')
     @include('sections.shop')
-    @include('sections.sale')
+    @include('sections.daily-sale')
     @include('sections.benefits')
     @include('sections.makers')
     @include('sections.reviews')

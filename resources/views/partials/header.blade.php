@@ -9,11 +9,12 @@
     </a>
 
     <nav class="menu" id="menu">
-        <a href="{{ url('/') }}#shop">Shop</a>
-        <a href="{{ url('/') }}#categories">Categories</a>
-        <a href="{{ url('/') }}#sale">Daily sale</a>
-        <a href="{{ url('/') }}#makers">Makers</a>
-        <a href="{{ url('/') }}#faq">Help</a>
+        <a href="{{ route('shop') }}">Shop</a>
+        <a href="{{ route('categories') }}">Categories</a>
+        <a href="{{ route('daily-sale') }}">Daily sale</a>
+        <a href="{{ route('makers') }}">Makers</a>
+        <a href="{{ route('help') }}">Help</a>
+        <a href="{{ route('contact') }}">Contact</a>
     </nav>
 
     <div class="header-right">
@@ -29,13 +30,11 @@
         const burger = document.getElementById('burger');
         const menu = document.getElementById('menu');
 
-        // mobile menu kholna / band karna
         burger.addEventListener('click', () => menu.classList.toggle('open'));
         menu.querySelectorAll('a').forEach(a =>
             a.addEventListener('click', () => menu.classList.remove('open'))
         );
 
-        // sections ka reveal animation
         const io = new IntersectionObserver((entries) => {
             entries.forEach(e => {
                 if (e.isIntersecting) {
