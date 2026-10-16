@@ -6,32 +6,7 @@
     ];
 @endphp
 
-<style>
-    .reviews { background: #f3f5f7; padding: 72px 0; border-bottom: 1px solid #e2e8f0; }
-    .reviews h2 {
-        font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.1;
-        letter-spacing: -1.5px; max-width: 760px; margin-bottom: 40px;
-    }
-    .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .review {
-        background: #fff; border: 1px solid #e2e8f0; border-radius: 26px;
-        padding: 32px; display: flex; flex-direction: column; transition: 0.25s;
-    }
-    .review:hover { transform: translateY(-5px); box-shadow: 0 16px 30px rgba(20, 35, 59, 0.08); }
-    .stars { color: #f5b73b; font-size: 18px; letter-spacing: 3px; margin-bottom: 20px; }
-    .review blockquote { font-size: 17px; line-height: 1.7; color: #14233b; flex: 1; }
-    .review-by { margin-top: 26px; font-size: 13px; color: #7b8a9c; }
 
-    @media (max-width: 1000px) {
-        .review-grid { grid-template-columns: 1fr; gap: 16px; }
-    }
-    @media (max-width: 700px) {
-        .reviews { padding: 48px 0; }
-        .reviews h2 { margin-bottom: 28px; }
-        .review { padding: 24px; }
-        .review blockquote { font-size: 16px; }
-    }
-</style>
 
 <section class="reviews" id="reviews">
     <div class="wrap">

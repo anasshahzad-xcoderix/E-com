@@ -5,50 +5,7 @@
     $newPrice = $oldPrice - ($oldPrice * $discount / 100);
 @endphp
 
-<style>
-    .sale { padding: 24px 0 72px; }
-    .sale-card {
-        display: grid; grid-template-columns: 1fr 1fr;
-        border-radius: 28px; overflow: hidden; background: #6b2d5c; color: #fff;
-        min-height: 340px;
-    }
-    .sale-text { padding: 48px; display: flex; flex-direction: column; justify-content: center; }
-    .sale-text h2 { font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; line-height: 1.1; letter-spacing: -1px; }
-    .sale-text p { margin-top: 16px; font-size: 14px; line-height: 1.6; color: #f0dcea; max-width: 420px; }
 
-    .timer { display: flex; gap: 10px; margin-top: 26px; }
-    .tbox {
-        background: rgba(255, 255, 255, 0.14); border-radius: 14px;
-        min-width: 62px; padding: 10px 8px; text-align: center;
-    }
-    .tbox strong { display: block; font-size: 24px; font-weight: 800; line-height: 1.1; }
-    .tbox span { font-size: 11px; color: #f0dcea; }
-
-    .sale-buy { display: flex; align-items: center; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
-    .new-price { font-size: 34px; font-weight: 800; }
-    .old-price { color: #d9b9cf; text-decoration: line-through; font-size: 16px; margin-left: -6px; }
-    .sale-btn {
-        background: #ffc928; color: #14233b; border: none; cursor: pointer;
-        padding: 13px 22px; border-radius: 999px; font-family: inherit;
-        font-weight: 700; font-size: 14px; transition: 0.2s;
-    }
-    .sale-btn:hover { background: #fff; transform: translateY(-2px); }
-
-    .sale-art { background: #8b4579; display: flex; align-items: center; justify-content: center; padding: 24px; }
-    .sale-art svg { width: 55%; max-width: 280px; height: auto; }
-
-    @media (max-width: 800px) {
-        .sale-card { grid-template-columns: 1fr; }
-        .sale-art { order: -1; padding: 32px 24px 8px; }
-        .sale-art svg { width: 38%; max-width: 160px; }
-        .sale-text { padding: 28px 24px 32px; }
-    }
-    @media (max-width: 420px) {
-        .tbox { min-width: 54px; }
-        .tbox strong { font-size: 20px; }
-        .new-price { font-size: 28px; }
-    }
-</style>
 
 <section class="sale" id="sale">
     <div class="wrap">

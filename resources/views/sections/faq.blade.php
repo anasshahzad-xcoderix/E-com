@@ -8,37 +8,7 @@
     ];
 @endphp
 
-<style>
-    .faq { padding: 72px 0; background: #fff; }
-    .faq-box { max-width: 860px; margin: 0 auto; }
-    .faq h2 {
-        font-size: clamp(30px, 4vw, 46px); font-weight: 800; letter-spacing: -1.5px;
-        line-height: 1.1; margin-bottom: 32px;
-    }
-    .faq-list { border-top: 1px solid #e2e8f0; }
-    .faq-item { border-bottom: 1px solid #e2e8f0; }
-    .faq-q {
-        width: 100%; display: flex; justify-content: space-between; align-items: center;
-        gap: 20px; padding: 24px 0; background: none; border: none; cursor: pointer;
-        font-family: inherit; font-size: 17px; font-weight: 700; color: #14233b; text-align: left;
-    }
-    .faq-q:hover { color: #1f7a6d; }
-    .faq-icon {
-        flex-shrink: 0; font-size: 26px; font-weight: 400; line-height: 1;
-        color: #1f7a6d; transition: transform 0.3s;
-    }
-    .faq-item.open .faq-icon { transform: rotate(45deg); }
 
-    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
-    .faq-a p { padding: 0 40px 24px 0; color: #5b6b80; font-size: 15px; line-height: 1.75; }
-
-    @media (max-width: 700px) {
-        .faq { padding: 48px 0; }
-        .faq h2 { margin-bottom: 24px; }
-        .faq-q { font-size: 16px; padding: 20px 0; }
-        .faq-a p { padding-right: 0; }
-    }
-</style>
 
 <section class="faq" id="faq">
     <div class="wrap">

@@ -24,40 +24,6 @@
     ];
 @endphp
 
-<style>
-    .benefits { background: #f3f5f7; padding: 72px 0; }
-    .benefits h2 {
-        font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.1;
-        letter-spacing: -1.5px; max-width: 760px; margin-bottom: 40px;
-    }
-    .benefit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .benefit {
-        background: #fff; border: 1px solid #e2e8f0; border-radius: 26px;
-        padding: 32px; transition: 0.25s;
-    }
-    .benefit:hover { transform: translateY(-5px); box-shadow: 0 16px 30px rgba(20, 35, 59, 0.08); }
-    .benefit-icon {
-        width: 48px; height: 48px; border-radius: 14px;
-        display: flex; align-items: center; justify-content: center; margin-bottom: 28px;
-    }
-    .benefit-icon svg {
-        width: 24px; height: 24px; fill: none; stroke: currentColor;
-        stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
-    }
-    .benefit h3 { font-size: 21px; font-weight: 800; line-height: 1.25; letter-spacing: -0.4px; max-width: 260px; }
-    .benefit p { margin-top: 14px; color: #5b6b80; font-size: 15px; line-height: 1.7; }
-
-    @media (max-width: 1000px) {
-        .benefit-grid { grid-template-columns: 1fr; gap: 16px; }
-        .benefit h3 { max-width: none; }
-    }
-    @media (max-width: 700px) {
-        .benefits { padding: 48px 0; }
-        .benefits h2 { margin-bottom: 28px; }
-        .benefit { padding: 24px; }
-        .benefit-icon { margin-bottom: 20px; }
-    }
-</style>
 
 <section class="benefits" id="benefits">
     <div class="wrap">

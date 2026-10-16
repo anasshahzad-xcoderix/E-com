@@ -16,63 +16,7 @@
     $cats = ['All', 'Ceramics', 'Lighting', 'Textiles', 'Furniture', 'Plants'];
 @endphp
 
-<style>
-    .shop { padding: 72px 0; }
-    .shop-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; }
-    .shop-head h2 { font-size: clamp(32px, 4vw, 44px); font-weight: 800; letter-spacing: -1.5px; }
-    .shop-count { color: #7b8a9c; font-size: 14px; margin-top: 6px; }
-    .shop-tools { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
-    .shop-tools input, .shop-tools select {
-        border: none; border-bottom: 1.5px solid #e2e8f0; background: transparent;
-        padding: 10px 6px; font-family: inherit; font-size: 14px; color: #14233b; min-width: 180px;
-    }
-    .shop-tools input:focus, .shop-tools select:focus { outline: none; border-color: #1f7a6d; }
 
-    .filters { display: flex; gap: 8px; margin: 28px 0; overflow-x: auto; padding-bottom: 6px; }
-    .filter {
-        border: 1.5px solid transparent; background: transparent; color: #14233b;
-        padding: 10px 20px; border-radius: 999px; font-family: inherit; font-size: 14px;
-        font-weight: 500; cursor: pointer; white-space: nowrap; transition: 0.2s;
-    }
-    .filter:hover { border-color: #14233b; }
-    .filter.on { background: #14233b; color: #fff; border-color: #14233b; }
-
-    .items { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-    .item[hidden] { display: none; }
-    .item-img {
-        position: relative; border-radius: 22px; aspect-ratio: 4 / 5;
-        display: flex; align-items: center; justify-content: center; overflow: hidden;
-        transition: 0.25s;
-    }
-    .item:hover .item-img { transform: translateY(-4px); box-shadow: 0 14px 28px rgba(20, 35, 59, 0.1); }
-    .item-img svg { width: 78%; height: auto; }
-    .badge-tag {
-        position: absolute; top: 12px; left: 12px; background: #14233b; color: #fff;
-        font-size: 11px; font-weight: 700; padding: 5px 11px; border-radius: 999px;
-    }
-    .add-btn {
-        position: absolute; left: 12px; right: 12px; bottom: 12px; padding: 12px;
-        border: none; border-radius: 999px; background: #fff; color: #14233b;
-        font-family: inherit; font-weight: 600; font-size: 14px; cursor: pointer;
-        opacity: 0; transform: translateY(10px); transition: 0.25s;
-    }
-    .item:hover .add-btn { opacity: 1; transform: translateY(0); }
-    .add-btn:hover { background: #f5b73b; }
-    .item-info { display: flex; justify-content: space-between; gap: 10px; margin-top: 14px; font-weight: 600; font-size: 15px; }
-    .item-price { font-weight: 800; }
-    .item-meta { color: #7b8a9c; font-size: 12px; margin-top: 3px; }
-    .item-meta b { color: #f5b73b; }
-    .shop-empty { text-align: center; color: #7b8a9c; padding: 50px 0; }
-
-    @media (hover: none) { .add-btn { opacity: 1; transform: none; } }
-    @media (max-width: 1000px) { .items { grid-template-columns: repeat(3, 1fr); } }
-    @media (max-width: 700px) {
-        .shop { padding: 48px 0; }
-        .items { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-        .shop-tools { width: 100%; }
-        .shop-tools input, .shop-tools select { flex: 1; min-width: 0; }
-    }
-</style>
 
 <section class="shop" id="shop">
     <div class="wrap">
