@@ -16,8 +16,6 @@
     $cats = ['All', 'Ceramics', 'Lighting', 'Textiles', 'Furniture', 'Plants'];
 @endphp
 
-
-
 <section class="shop" id="shop">
     <div class="wrap">
 

@@ -7,9 +7,6 @@
         ['q' => 'How do I sell on Yousaf Store?',      'a' => 'Apply from the Makers page with a few photos of your work. Our team reviews every application within five working days.'],
     ];
 @endphp
-
-
-
 <section class="faq" id="faq">
     <div class="wrap">
         <div class="faq-box">
