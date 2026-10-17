@@ -54,4 +54,10 @@ public function shop()
 
     return back()->with('success', 'Thank you! Your message has been received.');
 }
+
+public function dashboard()
+    {
+        return view('dashboard');
+    }
+
 }
